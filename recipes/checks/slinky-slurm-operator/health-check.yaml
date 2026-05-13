@@ -59,6 +59,13 @@ spec:
         # Pods must be Running (long-lived) or Succeeded (completed jobs).
         # This catches Pending (init containers, scheduling), Failed, and
         # Unknown.
+        #
+        # chainsaw `error` assertions pass when no matching resource exists,
+        # which would let this step trivially pass on an empty namespace.
+        # The two preceding deployment-availability steps prevent that:
+        # they require both deployments to have at least one ready replica
+        # in `slinky`, which guarantees pods exist and are inspectable
+        # before this step runs.
         - error:
             resource:
               apiVersion: v1

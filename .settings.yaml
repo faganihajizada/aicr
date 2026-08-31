@@ -50,19 +50,19 @@ security_tools:
 # E2E Testing Tools
 testing_tools:
   # renovate: datasource=github-releases depName=kubernetes/kubernetes depType=testing_tools
-  kubectl: 'v1.36.0'
+  kubectl: 'v1.37.0'
   # renovate: datasource=github-releases depName=kubernetes-sigs/kind depType=testing_tools
-  kind: '0.31.0'
+  kind: '0.33.0'
   # renovate-digest: datasource=git-refs depName=nvkind packageName=https://github.com/NVIDIA/nvkind branch=main depType=testing_tools
-  nvkind: '56db9be854036c2f5a0133e3ccb0990e13ea9e6c'
+  nvkind: 'c57050497cffee36f10c8b918d2727c4f26d886e'
   # renovate: datasource=github-releases depName=tilt-dev/ctlptl depType=testing_tools
-  ctlptl: '0.9.3'
+  ctlptl: '0.9.5'
   # renovate: datasource=github-releases depName=tilt-dev/tilt depType=testing_tools
-  tilt: '0.37.3'
+  tilt: '0.37.7'
   # renovate: datasource=github-releases depName=helm/helm depType=testing_tools
-  helm: 'v4.1.4'
+  helm: 'v4.2.4'
   # renovate: datasource=github-releases depName=helmfile/helmfile depType=testing_tools
-  helmfile: 'v1.5.1'
+  helmfile: 'v1.7.4'
   # helmfile_checksums are refreshed automatically by tools/update-helmfile-checksums
   # via Renovate postUpgradeTasks whenever the helmfile version above is bumped.
   helmfile_checksums:
@@ -71,7 +71,7 @@ testing_tools:
     darwin_amd64: 'f9b807a3f3e5c97f1c13877c17465ec3e1897acc0b7a3fc4a5ab745e3fae3fd3'
     darwin_arm64: 'ff3c0b754906f60f3b191924de2bcc3f95100e61786653446294680846dd20b3'
   # renovate: datasource=github-releases depName=kubernetes-sigs/kwok depType=testing_tools
-  kwok: 'v0.7.0'
+  kwok: 'v0.8.0'
   # renovate: datasource=github-releases depName=kyverno/chainsaw depType=testing_tools
   chainsaw: 'v0.2.15'
   # chainsaw_checksums are refreshed automatically by tools/update-chainsaw-checksums
@@ -82,9 +82,9 @@ testing_tools:
     darwin_amd64: 'ddb56002ff8c6265f55ec40c82eb0ef0dddec5127dd12d4fc5e7953453481f4b'
     darwin_arm64: '502bef17dd822217e82590e9ccf01c1e26a56b3fa34a835789b9af73e82a169a'
   # renovate: datasource=github-releases depName=mikefarah/yq depType=testing_tools
-  yq: 'v4.53.2'
+  yq: 'v4.53.6'
   # renovate: datasource=github-releases depName=kubernetes-sigs/karpenter depType=testing_tools
-  karpenter: 'v1.12.0'
+  karpenter: 'v1.14.1'
 
 # Quality Thresholds
 quality:

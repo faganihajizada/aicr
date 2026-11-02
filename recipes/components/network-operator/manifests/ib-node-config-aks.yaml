@@ -76,7 +76,7 @@ spec:
           name: ib-node-config-settings
       initContainers:
       - name: ib-setup
-        image: busybox:1.37@sha256:1487d0af5f52b4ba31c7e465126ee2123fe3f2305d638e7827681e7cf6c83d5e
+        image: busybox:1.38@sha256:a46257e06c82ad85242d0d38077d0a52d9896389ca60a1a59d3463db586e5fa4
         securityContext:
           privileged: true
         volumeMounts:
@@ -149,7 +149,7 @@ spec:
           echo "=== Setup Complete ==="
       containers:
       - name: keepalive
-        image: busybox:1.37@sha256:1487d0af5f52b4ba31c7e465126ee2123fe3f2305d638e7827681e7cf6c83d5e
+        image: busybox:1.38@sha256:a46257e06c82ad85242d0d38077d0a52d9896389ca60a1a59d3463db586e5fa4
         command:
         - sh
         - -c
